@@ -86,10 +86,10 @@ class Graphics:
 
 
 # 定义压缩比，数值越大，压缩越小
-SIZE_normal = 1.0
-SIZE_small = 1.5
-SIZE_more_small = 2.0
-SIZE_more_small_small = 3.0
+SIZE_normal = 0.2
+SIZE_small = 0.2
+SIZE_more_small = 0.2
+SIZE_more_small_small = 0.3
 
 
 def make_directory(directory):
@@ -247,7 +247,7 @@ def git_operation():
 #     compress_photo()   # 压缩图片，并保存到mini_photos文件夹下
 #     git_operation()    # 提交到github仓库
 #     handle_photo()     # 将文件处理成json格式，存到博客仓库中
-cut_photo()        # 裁剪图片，裁剪成正方形，去中间部分
+#cut_photo()        # 裁剪图片，裁剪成正方形，去中间部分
 compress_photo()   # 压缩图片，并保存到mini_photos文件夹下
 git_operation()    # 提交到github仓库
 handle_photo()     # 将文件处理成json格式，存到博客仓库中   
